@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Fixed layout width with overlapping block</title>
+
+    <style type="text/css" media="all">
+      .left-col {
+        float: left;
+        width: 400px;
+        background: #b2577a;
+        color: white;
+      }
+
+      .right-col {
+        position: relative;
+        float: left;
+        left: -50px;
+        top: 50px;
+        width: 120px;
+        background: #36cfc7;
+      }
+
+      .left-col p {
+        padding: 10px;
+        padding-right: 50px;
+        margin: 0;
+      }
+
+      .right-col p {
+        padding: 10px;
+        padding-top: 0
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left-col">
+      <p>Posuere ultricies turpis. Pellentesque a pede. Duis sed tortor. Phasellus
+      egestas porta lectus. Aliquam dignissim consequat diam. Pellentesque pede.</p>
+
+      <p>Ut varius tincidunt tellus. Curabitur ornare ipsum. Aenean laoreet posuere
+      orci. Etiam id nisl. Suspendisse volutpat elit molestie orci. Suspendisse vel
+      augue at felis tincidunt sollicitudin. Fusce arcu. Duis a tortor. Duis et odio
+      et leo sollicitudin consequat. Aliquam lobortis. Phasellus condimentum. Ut
+      porttitor bibendum libero. Integer euismod lacinia velit. Donec velit justo,
+      sodales varius, cursus sed, mattis a, arcu.</p>
+
+      <p>Maecenas accumsan, sem iaculis egestas gravida, odio nunc aliquet dui, eget
+      cursus diam purus vel augue. Donec eros nisi, imperdiet quis, volutpat ac,
+      sollicitudin.</p>
+
+      <p>Ultrices quis, lobortis et, arcu. Duis aliquam libero non diam.</p>
+
+      <p>Vestibulum placerat tincidunt tortor. Ut vehicula ligula quis lectus. In
+      eget velit. Quisque vel risus. Mauris pede. Nullam ornare sapien sit amet nisl.
+      Cras tortor. Donec tortor lorem, dignissim sit amet, pulvinar eget, mattis eu,
+      metus. Cras vestibulum erat ultrices neque. Praesent rhoncus, dui blandit
+      pellentesque congue, mauris mi ullamcorper odio, eget ultricies nunc felis in
+      augue. Nullam porta nunc. Donec in pede ac mauris mattis eleifend. Cras a
+      libero vel est lacinia dictum. In hac habitasse platea dictumst. Nullam
+      malesuada molestie lorem. Nunc non mauris. Nam accumsan tortor gravida elit.
+      Cras.</p>
+    </div>
+
+    <div class="right-col">
+      <p>Magna non felis ornare consectetuer. Sed lorem. Nam leo. In eget pede. Donec
+      porta.</p>
+
+      <p>Etiam facilisis. Nam suscipit. Ut consectetuer leo vehicula augue. Aliquam
+      cursus. Integer pharetra rhoncus massa. Cras et ligula vel quam tristique
+      commodo. </p>
+    </div>
+  </body>
+</html>

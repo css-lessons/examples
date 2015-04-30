@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Equal height columns using positioning</title>
+
+    <style type="text/css" media="all">
+      .group:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: "";
+        clear: both;
+        height: 0;
+      }
+
+      .group { display: inline-block; }
+
+      .group {
+        position: relative;
+        background: #6c2d58;
+        z-index: 1; 
+        width: 100%; 
+      }
+
+      .col {
+        position: relative;
+        width: 50%;
+        float: left;
+      }
+
+      .col:nth-child(1) {
+        width: 40%;
+      }
+
+      .col p {
+        padding: 10px;
+      }
+
+      .group:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 40%;
+        height: 100%;
+        background: #36cfc7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="group">
+      <div class="col">
+        <p>Tristique vehicula. Suspendisse eget elit. Duis adipiscing dui non quam.</p>
+
+        <p>Duis posuere tortor sit amet est iaculis egestas. Ut at magna. Etiam dui
+        nisi, blandit quis, fermentum vitae, auctor vel, sem. Cras et leo. Vestibulum
+        ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        Proin luctus, odio eu porttitor adipiscing, ante elit tristique tortor, sit
+        amet malesuada tortor nisi sit amet neque. Praesent rhoncus eros non velit.
+        Pellentesque mattis. Sed sit amet ante. Mauris ac nibh eget risus volutpat
+        tempor. Praesent volutpat sollicitudin dui. Sed in tellus id urna viverra
+        commodo. Vestibulum enim felis, interdum non, sollicitudin in, posuere.</p>
+      </div>
+
+      <div class="col">
+        <p>Mi, dignissim ut, imperdiet tristique, interdum a, dolor.</p>
+
+        <p>Vestibulum elit nibh, rhoncus non, euismod sit amet, pretium eu, enim. Nunc
+        commodo ultricies dui. Cras gravida rutrum massa. Donec accumsan mattis turpis.
+        Quisque sem. Quisque elementum sapien iaculis augue. In dui sem, congue sit
+        amet, feugiat quis, lobortis at, eros.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum
+        vehicula purus. Cum sociis natoque penatibus et magnis dis parturient montes,
+        nascetur ridiculus mus.</p>
+
+        <p>Aenean risus dui, volutpat non, posuere vitae, sollicitudin in, urna. Nam
+        eget eros a enim pulvinar rhoncus. Cum sociis natoque penatibus et magnis dis
+        parturient montes, nascetur ridiculus mus. Nulla facilisis.</p>
+
+        <p>Magna. Curabitur ultricies felis ut libero. Nullam tincidunt enim eu nibh.
+        Nunc eget ipsum in sem facilisis convallis. Proin fermentum risus. Vestibulum
+        ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        Vestibulum hendrerit malesuada odio. Fusce ut elit ut augue sollicitudin
+        blandit. Phasellus volutpat lorem. Duis non pede et neque luctus tincidunt.
+        Duis interdum tempus elit.</p>
+
+        <p>Aenean metus. Vestibulum ac lacus. Vivamus porttitor, massa ut hendrerit
+        bibendum, metus augue aliquet turpis, vitae pellentesque velit est vitae metus.
+        Duis eros enim, fermentum at, sagittis id, lacinia eget, tellus. Nunc consequat
+        pede et nulla. Donec nibh. Pellentesque cursus orci vitae urna. </p>
+      </div>
+    </div>
+  </body>
+</html>

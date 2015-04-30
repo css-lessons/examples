@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Equal height columns with flexbox</title>
+
+    <style type="text/css" media="all">
+      .group {		
+        display: -webkit-flex;		
+        display: -ms-flexbox;		
+        display: flex;
+        overflow: hidden;
+      }
+
+      .group .col {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .group .col:nth-child(1) {
+        background: #36cfc7;
+      }
+
+      .group .col:nth-child(2) { 
+        background: #f6b17f;
+      }
+
+      .group .col:nth-child(3) { 
+        background: #36cfc7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="group">
+      <div class="col">
+        <p>Praesent turpis nunc, vehicula in, bibendum vitae, blandit ac, turpis. Duis
+        rhoncus. Vestibulum metus. Morbi consectetuer felis id tortor. Etiam augue leo,
+        cursus eget, ornare et, ornare sagittis, tellus. Fusce felis tellus,
+        consectetuer nec, consequat at, ornare non, arcu. Maecenas condimentum sodales
+        odio. Sed eu orci.</p>
+
+        <p>Nullam adipiscing eros sit amet ante. Vestibulum ante. Sed quis ipsum non
+        ligula dignissim luctus. Integer quis justo id tortor accumsan tempus. Cras
+        vitae magna. Nunc bibendum lacinia tellus. Quisque porttitor ligula et pede.
+        Nam erat nibh, fringilla ac, rutrum sit amet, rhoncus in, ipsum. Mauris
+        rhoncus, lacus eu convallis sagittis, quam magna placerat est, vitae.</p>
+      </div>
+
+      <div class="col">
+        <p>Lacus tellus ornare purus, a pulvinar lacus orci eget nibh. Maecenas sed
+        nibh non lacus tempor faucibus. In hac habitasse platea dictumst. Vivamus a
+        orci at nulla tristique condimentum. Donec arcu quam, dictum accumsan,
+        convallis accumsan, cursus sit amet, ipsum. In pharetra sagittis nunc.</p>
+
+        <p>Donec consequat mi. Quisque vitae dolor. Integer lobortis. Maecenas id
+        nulla. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed volutpat
+        felis vitae dui. Vestibulum et est ac ligula dapibus elementum. Nunc suscipit
+        nisl eu felis. Duis nec tortor. Nullam diam libero, semper id, consequat in,
+        consectetuer ut, metus. Phasellus dui purus, vehicula sed, venenatis a, rutrum
+        at.</p>
+
+        <p>Nam posuere ultricies turpis. Pellentesque a pede. Duis sed tortor.
+        Phasellus egestas porta lectus. Aliquam dignissim consequat diam. Pellentesque
+        pede.</p>
+
+        <p>Ut varius tincidunt tellus. Curabitur ornare ipsum. Aenean laoreet posuere
+        orci. Etiam id nisl. Suspendisse volutpat elit molestie orci. Suspendisse vel
+        augue at felis tincidunt sollicitudin. Fusce arcu. Duis a tortor. Duis et odio
+        et leo sollicitudin consequat. Aliquam lobortis. Phasellus condimentum. Ut
+        porttitor bibendum libero. Integer euismod lacinia velit. Donec velit justo,
+        sodales varius, cursus sed, mattis a, arcu.</p>
+
+        <p>Maecenas accumsan, sem iaculis egestas gravida, odio nunc aliquet dui, eget
+        cursus diam purus vel augue. Donec eros nisi, imperdiet quis, volutpat ac.</p>
+      </div>
+
+      <div class="col">
+        <p>Vulputate, ultrices quis, lobortis et, arcu. Duis aliquam libero non
+        diam.</p>
+
+        <p>Vestibulum placerat tincidunt tortor. Ut vehicula ligula quis lectus. In
+        eget velit. Quisque vel risus. Mauris pede. Nullam ornare sapien sit amet nisl.
+        Cras tortor. Donec tortor lorem, dignissim sit amet, pulvinar eget, mattis eu,
+        metus. Cras vestibulum erat ultrices neque. Praesent rhoncus, dui blandit
+        pellentesque congue, mauris mi ullamcorper odio, eget ultricies nunc felis in
+        augue. Nullam porta nunc. Donec in pede ac mauris mattis eleifend. Cras a
+        libero vel est lacinia dictum. In hac habitasse platea dictumst. Nullam
+        malesuada molestie lorem. Nunc non mauris. Nam accumsan tortor gravida elit.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
